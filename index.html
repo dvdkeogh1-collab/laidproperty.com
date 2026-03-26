@@ -57,39 +57,47 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
       text-decoration: none;
     }
 
-    .nav-logo-mark {
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-      border-radius: 8px;
+    .nav-logo-block {
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: 800;
-      font-size: 18px;
-      color: var(--white);
-      letter-spacing: 0.5px;
+      background-color: #0D2818;
+      padding: 10px 18px 10px 14px;
+      border-radius: 4px;
     }
 
-    .nav-logo-text {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
+    .nav-logo-bar {
+      width: 3px;
+      height: 36px;
+      background-color: #BFA06A;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-words {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo-laid {
+      font-family: 'Georgia', serif;
+      font-size: 20px;
       font-weight: 700;
-      color: var(--white);
-      line-height: 1.1;
+      letter-spacing: 6px;
+      color: #BFA06A;
+      line-height: 1.15;
     }
 
-    .nav-logo-sub {
-      font-family: 'Inter', sans-serif;
-      font-size: 10px;
-      font-weight: 500;
-      color: var(--gold-bright);
-      letter-spacing: 2px;
+    .nav-logo-property {
+      font-family: 'Arial', sans-serif;
+      font-size: 7px;
+      letter-spacing: 4px;
+      color: #6DAE81;
       text-transform: uppercase;
+      line-height: 1;
+      margin-top: 3px;
     }
 
     .nav-links {
@@ -969,10 +977,12 @@
   <!-- ─── NAVBAR ─────────────────────────────── -->
   <nav>
     <a href="#hero" class="nav-logo">
-      <div class="nav-logo-mark">L</div>
-      <div>
-        <div class="nav-logo-text">LAID Property</div>
-        <div class="nav-logo-sub">Limited</div>
+      <div class="nav-logo-block">
+        <div class="nav-logo-bar"></div>
+        <div class="nav-logo-words">
+          <div class="nav-logo-laid">LAID</div>
+          <div class="nav-logo-property">PROPERTY</div>
+        </div>
       </div>
     </a>
     <ul class="nav-links" id="navLinks">
